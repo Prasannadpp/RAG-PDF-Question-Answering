@@ -53,7 +53,7 @@ pip install -r requirements.txt
 GROQ_API_KEY=your_groq_api_key_here
 
 
-▶️ Running the Application
+▶️ Running the Application\
 TOKENIZERS_PARALLELISM=false venv/bin/python RAG_APPLICATION.py
 
 How it works:
@@ -64,24 +64,24 @@ How it works:
 5. Type exit to quit
 
 🧪 Example Queries
---> Summarize the PDF
---> What are the key points of the document?
+--> Summarize the PDF\
+--> What are the key points of the document?\
 >>If an answer is not found in the PDF, the system responds:
 Not found in the PDF.
 
 📦 Dependencies
 
-langchain
-langchain-community
-langchain-groq
-langchain-huggingface
-chromadb
-PyPDF2
-sentence-transformers
+langchain \
+langchain-community \
+langchain-groq\
+langchain-huggingface\
+chromadb\
+PyPDF2\
+sentence-transformers\
 python-dotenv
 
 
 🔒 Notes
--API keys are never committed to GitHub \\
--The application only answers based on document content\\
--Designed to handle large PDFs without exceeding token limits\\
+-API keys are never committed to GitHub \
+-The application only answers based on document content\
+-Designed to handle large PDFs without exceeding token limits\
