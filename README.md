@@ -22,7 +22,7 @@ PyPDF2
 
 
 📁 Project Structure
-,,,
+```
 rag-project/
 │
 ├── RAG_APPLICATION.py   # Main application
@@ -31,7 +31,7 @@ rag-project/
 ├── .env.example         # API key template
 ├── .gitignore
 └── venv/                # Virtual environment (not committed)
-,,,
+```
 
 🚀 Setup & Installation
 1. Clone the repository: 
