@@ -2,23 +2,24 @@ A console-based Retrieval-Augmented Generation (RAG) application that answers qu
 It uses LangChain, ChromaDB, and Groq-hosted LLMs to perform semantic search and generate accurate, context-aware answers.
 
 
-✨ Features
-Upload and process PDF files
-Semantic search using vector embeddings
-Answers grounded strictly in PDF content
-Handles large PDFs efficiently with chunking
-Clean console-based interaction
-Prevents hallucinated answers
+✨ Features:\
+Upload and process PDF files\
+Semantic search using vector embeddings\
+Answers grounded strictly in PDF content\
+Handles large PDFs efficiently with chunking\
+Clean console-based interaction\
+Prevents hallucinated answers\
 Secure API key handling via environment variables
 
-
-🛠️ Tech Stack
-Python
-LangChain
-ChromaDB
-Groq (LLM inference)
-HuggingFace Sentence Transformers
+ 
+🛠️ Tech Stack: \
+Python\
+LangChain\
+ChromaDB\
+Groq (LLM inference)\
+HuggingFace Sentence Transformers\
 PyPDF2
+
 
 
 📁 Project Structure
@@ -53,7 +54,8 @@ pip install -r requirements.txt
 GROQ_API_KEY=your_groq_api_key_here
 
 
-▶️ Running the Application\
+▶️ Running the Application:
+
 TOKENIZERS_PARALLELISM=false venv/bin/python RAG_APPLICATION.py
 
 How it works:
@@ -63,13 +65,15 @@ How it works:
 4. The system retrieves relevant content and generates answers
 5. Type exit to quit
 
-🧪 Example Queries
+🧪 Example Queries:\
 --> Summarize the PDF\
---> What are the key points of the document?\
+--> What are the key points of the document?
 >>If an answer is not found in the PDF, the system responds:
 Not found in the PDF.
 
-📦 Dependencies
+
+
+📦 Dependencies: 
 
 langchain \
 langchain-community \
@@ -84,4 +88,4 @@ python-dotenv
 🔒 Notes
 -API keys are never committed to GitHub \
 -The application only answers based on document content\
--Designed to handle large PDFs without exceeding token limits\
+-Designed to handle large PDFs without exceeding token limits
