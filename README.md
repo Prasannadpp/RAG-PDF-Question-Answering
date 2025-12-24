@@ -57,16 +57,16 @@ GROQ_API_KEY=your_groq_api_key_here
 TOKENIZERS_PARALLELISM=false venv/bin/python RAG_APPLICATION.py
 
 How it works:
-Select a PDF file when prompted
-The PDF is indexed using vector embeddings
-Ask questions in the terminal
-The system retrieves relevant content and generates answers
-Type exit to quit
+1. Select a PDF file when prompted
+2. The PDF is indexed using vector embeddings
+3. Ask questions in the terminal
+4. The system retrieves relevant content and generates answers
+5. Type exit to quit
 
 🧪 Example Queries
-Summarize the PDF
-What are the key points of the document?
-If an answer is not found in the PDF, the system responds:
+--> Summarize the PDF
+--> What are the key points of the document?
+>>If an answer is not found in the PDF, the system responds:
 Not found in the PDF.
 
 📦 Dependencies
@@ -82,6 +82,6 @@ python-dotenv
 
 
 🔒 Notes
-API keys are never committed to GitHub
-The application only answers based on document content
-Designed to handle large PDFs without exceeding token limits
+-API keys are never committed to GitHub \\
+-The application only answers based on document content\\
+-Designed to handle large PDFs without exceeding token limits\\
