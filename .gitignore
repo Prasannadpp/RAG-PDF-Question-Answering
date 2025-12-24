@@ -1,0 +1,22 @@
+# Secrets
+.env
+
+# Virtual environments
+venv/
+.venv/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# OS / editor
+.DS_Store
+.vscode/
+
+# Chroma local data (if created)
+chroma/
+*.sqlite3
+
+# PDFs / data (optional)
+*.pdf
+data/
