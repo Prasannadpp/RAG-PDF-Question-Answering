@@ -62,7 +62,7 @@ if not groq_api_key:
 llm = ChatGroq(
     api_key=groq_api_key,
     model_name="llama-3.1-8b-instant",
-    temperature=0,   # more faithful / less creative
+    temperature=0,  
 )
 print("✅ LLM initialized using Groq.")
 
