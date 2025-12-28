@@ -1,9 +1,9 @@
 A console-based Retrieval-Augmented Generation (RAG) application that answers questions based on the content of PDF files.
-It uses LangChain, ChromaDB, and Groq-hosted LLMs to perform semantic search and generate accurate, context-aware answers./
+It uses LangChain, ChromaDB, and Groq-hosted LLMs to perform semantic search and generate accurate, context-aware answers.
 
 
 
-✨ Features: /
+✨ Features: 
 Upload and process PDF files/
 Semantic search using vector embeddings/
 Answers grounded strictly in PDF content/
@@ -14,7 +14,7 @@ Secure API key handling via environment variables
 
 
 
-🛠️ Tech Stack: /
+🛠️ Tech Stack: 
 Python/
 LangChain/
 ChromaDB/
@@ -58,14 +58,14 @@ GROQ_API_KEY=your_groq_api_key_here
 ▶️ Running the Application/
 TOKENIZERS_PARALLELISM=false venv/bin/python RAG_APPLICATION.py
 
-How it works:/
+How it works:
 Select a PDF file when prompted/
 The PDF is indexed using vector embeddings/
 Ask questions in the terminal/
 The system retrieves relevant content and generates answers/
 Type exit to quit
 
-🧪 Example Queries: /
+🧪 Example Queries: 
 Summarize the PDF/
 What are the key points of the document?/
 If an answer is not found in the PDF, the system responds:/
