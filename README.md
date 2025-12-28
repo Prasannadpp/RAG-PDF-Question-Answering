@@ -3,24 +3,24 @@ It uses LangChain, ChromaDB, and Groq-hosted LLMs to perform semantic search and
 
 
 
-✨ Features: 
-Upload and process PDF files/
-Semantic search using vector embeddings/
-Answers grounded strictly in PDF content/
-Handles large PDFs efficiently with chunking/
-Clean console-based interaction/
-Prevents hallucinated answers/
-Secure API key handling via environment variables
+✨ Features:
+- Upload and process PDF files
+- Semantic search using vector embeddings
+- Answers grounded strictly in PDF content
+- Handles large PDFs efficiently with chunking
+- Clean console-based interaction
+- Prevents hallucinated answers
+- Secure API key handling via environment variables
 
 
 
-🛠️ Tech Stack: 
-Python/
-LangChain/
-ChromaDB/
-Groq (LLM inference)/
-HuggingFace Sentence Transformers/
-PyPDF2
+🛠️ Tech Stack:
+🐍 Python  
+🔗 LangChain  
+🗃️ ChromaDB  
+⚡ Groq (LLM inference)  
+🤗 HuggingFace Sentence Transformers  
+📄 PyPDF2
 
 
 📁 Project Structure
@@ -35,13 +35,14 @@ rag-project/
 └── venv/                # Virtual environment (not committed)
 ```
 
-🚀 Setup & Installation
-1. Clone the repository: 
+🚀 🚀 Setup & Installation
 
-git clone https://github.com/<your-username>/rag-project.git
-cd rag-project
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/<your-username>/rag-project.git
+   cd rag-project
 
-2. Create and activate virtual environment
+2.Create and activate virtual environment
 
 python3 -m venv venv
 source venv/bin/activate
@@ -58,32 +59,33 @@ GROQ_API_KEY=your_groq_api_key_here
 ▶️ Running the Application/
 TOKENIZERS_PARALLELISM=false venv/bin/python RAG_APPLICATION.py
 
-How it works:
-Select a PDF file when prompted/
-The PDF is indexed using vector embeddings/
-Ask questions in the terminal/
-The system retrieves relevant content and generates answers/
+⚙️ How It Works
+Select a PDF file when prompted
+The PDF is indexed using vector embeddings
+Ask questions in the terminal
+The system retrieves relevant content and generates answers
+Responses are grounded strictly in the PDF
 Type exit to quit
 
-🧪 Example Queries: 
-Summarize the PDF/
-What are the key points of the document?/
-If an answer is not found in the PDF, the system responds:/
+🧪 Example Queries
+Summarize the PDF
+What are the key points of the document?
+What does the author say about <topic>?
+If an answer is not found in the PDF, the system responds:
 Not found in the PDF.
 
-📦 Dependencies:
 
-langchain/
-langchain-community/
-langchain-groq/
-langchain-huggingface/
-chromadb/
-PyPDF2/
-sentence-transformers/
+📦 Dependencies
+langchain
+langchain-community
+langchain-groq
+langchain-huggingface
+chromadb
+PyPDF2
+sentence-transformers
 python-dotenv
 
-
-🔒 Notes/
-API keys are never committed to GitHub/
-The application only answers based on document content/
-Designed to handle large PDFs without exceeding token limits
+🔒 Notes
+API keys are never committed to GitHub
+Answers are always based on document content (no hallucinations)
+Designed to handle large PDFs efficiently (chunking + embeddings)
